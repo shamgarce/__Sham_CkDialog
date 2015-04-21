@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <title>Slim Framework</title>
+        <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+        <link rel="stylesheet" href="../css/allindex.css"/>
+        <link type="text/css" rel="stylesheet" href="../assets/syntaxhighlighter_3.0.83/styles/shCoreDefault.css"/>
+       
+		<script type="text/javascript" src="../assets/syntaxhighlighter_3.0.83/scripts/shCore.js"></script>
+        <script type="text/javascript" src="../assets/syntaxhighlighter_3.0.83/scripts/shBrushJScript.js"></script>
+        <script type="text/javascript" src="../assets/syntaxhighlighter_3.0.83/scripts/shBrushPhp.js"></script>
+        <script type="text/javascript">SyntaxHighlighter.all();</script>
+
+        <script type="text/javascript" src="../assets/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="../assets/artDialog4.1.7/artDialog.js?skin=default"></script>
+        <script type="text/javascript" src="../assets/CK.js"></script>
+
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="container-fluid">
+                <header class="site-header">
+                  <div class="site-slogan">CKdialog碎片弹窗 for PHP</div>
+                </header>
+              <div class="row section">
+                <div class="col-md-12">
+        <h1 class="divider"><span>下载 &amp; 安装</span></h1>
+        <p>
+            下载压缩包,解压文件,把CKdialog放置到任意的目录下,例如跟下;</p>
+        <p>第一步,包含文件</p>
+        <pre>&lt;script type=&quot;text/javascript&quot; src=&quot;assets/jquery-1.10.2.min.js&quot;&gt;&lt;/script&gt;<br>&lt;script type=&quot;text/javascript&quot; src=&quot;assets/artDialog4.1.7/artDialog.js?skin=default&quot;&gt;&lt;/script&gt;<br>&lt;script type=&quot;text/javascript&quot; src=&quot;assets/CK.js&quot;&gt;&lt;/script&gt;</pre>
+        <p>
+        下一步:包含CKdialog文件,开始使用. </p>
+        <pre><code><span class="brush:javascript">$(".buttonclass").click(function(){
+	$.CK({
+		rel:$(this).attr('rel'),
+	});
+});</span></code></pre>
+        <p class="center">&nbsp;</p>
+    </div>
+</div><div class="row section">
+                <div class="col-md-12">
+<h1 class="divider"><span>代码示例</span></h1>
+<p>普通弹窗 </p>
+<pre>
+$(".test1").click(function(){
+    $.CK({
+        rel:$(this).attr('rel')
+    });
+});</pre>
+<div class="btn btn-primary test1" style="float:right" rel="dialog/test.html">测试</div>
+<p class="center">&nbsp;</p>
+<!-- --> 
+
+
+<p>普通弹窗 [cancel]按钮</p>
+<pre>$(".test2").click(function(){
+    $.CK({
+        cancel:true,
+        rel:$(this).attr('rel')
+    });
+});	</pre>
+<div class="btn btn-primary test2" style="float:right" rel="dialog/test.html">测试</div>
+<p class="center">&nbsp;</p>
+<!-- --> 
+ 
+ 
+<p>关闭 刷新 按钮</p>
+<pre>$(".test3").click(function(){
+    $.CK({
+        rel:$(this).attr('rel')
+    });
+});	</pre>
+<div class="btn btn-primary test3" style="float:right" rel="dialog/test_button.html">测试</div>
+<p class="center">&nbsp;</p>
+<!-- --> 
+ 
+ 
+<p>确定按钮</p>
+<pre>
+$(".test4").click(function(){
+    $.CK({
+        ok:true,
+        rel:$(this).attr('rel')
+    });
+});</pre>
+<div class="btn btn-primary test4" style="float:right" rel="dialog/test_okbutton.html">测试</div>
+<p class="center">&nbsp;</p>
+<!-- --> 
+ 
+ 
+<p>确定按钮 动作</p>
+<pre>$(".test5").click(function(){
+    $.CK({
+        ok:function(){
+            alert('do something');
+        },
+        rel:$(this).attr('rel')
+    });
+});</pre>
+<div class="btn btn-primary test5" style="float:right" rel="dialog/test.html">测试</div>
+<p class="center">&nbsp;</p>
+<!-- --> 
+ 
+ 
+<p>确定按钮 动作【碎片】 </p>
+<pre>$(".test6").click(function(){
+    $.CK({
+        ok:true,
+        rel:$(this).attr('rel')
+    });
+});</pre>
+<div class="btn btn-primary test6" style="float:right" rel="dialog/test_okaction.html">测试</div>
+<p class="center">&nbsp;</p>
+<!-- --> 
+ 
+ 
+<p>确定按钮 - 其他 【多层弹窗 刷新 关闭 待开发】</p>
+<pre><code>&lt;script src=&quot;/assets/js/jquery-1.11.1.min.js&quot;&gt;&lt;/script&gt;<br>&lt;script src=&quot;/assets/js/artDialog4.1.7/artDialog.js?skin=default&quot;&gt;&lt;/script&gt;<br>&lt;script src=&quot;/assets/js/CK.js&quot;&gt;&lt;/script&gt;&lt;!-- 基于artdialog的组件 --&gt;
+&lt;script src=&quot;/assets/js/CK_bootstrap.js&quot;&gt;&lt;/script&gt;&lt;!-- 基于bootstrap的组件 --&gt;</code></pre>
+<div class="btn btn-primary test7" style="float:right" rel="dialog/test.html">测试</div>
+<p class="center">&nbsp;</p>
+<!-- --> 
+ 
+        
+        
+        
+    </div>
+</div>
+
+<div class="row section"></div>
+<footer class="site-footer">
+        <p>
+                    Created by <a href="http://www.weibo.com/shampeak">Shampeak</a></p>
+</footer>
+            </div>
+        </div>
+
+    </body>
+</html>
+
+<script language="javascript">
+$(document).ready(function(){
+	
+
+	
+	$(".test1").click(function(){
+		$.CK({
+				rel:$(this).attr('rel')
+		});
+	});	
+
+	$(".test2").click(function(){
+		$.CK({
+				
+				cancel:true,
+				rel:$(this).attr('rel')
+		});
+	});	
+	
+
+	$(".test3").click(function(){
+		$.CK({
+				rel:$(this).attr('rel')
+		});
+	});	
+	
+	
+	$(".test4").click(function(){
+		$.CK({
+				ok:true,
+				rel:$(this).attr('rel')
+		});
+	});	
+	
+	
+	$(".test5").click(function(){
+		$.CK({
+				ok:function(){
+					alert('do something');
+				},
+				rel:$(this).attr('rel')
+		});
+	});	
+	
+	$(".test6").click(function(){
+		$.CK({
+				ok:true,
+				rel:$(this).attr('rel')
+		});
+	});	
+	
+	
+})
+</script>
+
+

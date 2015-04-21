@@ -1,0 +1,24 @@
+对话框内容
+
+<button class="dialog_close">关闭<button>
+
+<button class="dialog_refresh">刷新<button>
+
+
+
+<script type="text/dialog">
+
+
+ob = this;
+	$(".dialog_refresh").click(function(){
+		$.CKrefresh(_option);
+	});
+	
+	//关闭
+	$(".dialog_close").click(function(){
+		ob.close();
+	});
+    
+    
+
+</script>

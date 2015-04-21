@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <title>Slim Framework</title>
+        <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+        <link rel="stylesheet" href="css/allindex.css"/>
+        <link type="text/css" rel="stylesheet" href="syntaxhighlighter/styles/shCoreDefault.css"/>
+       
+		<script type="text/javascript" src="syntaxhighlighter/scripts/shCore.js"></script>
+        <script type="text/javascript" src="syntaxhighlighter/scripts/shBrushJScript.js"></script>
+        <script type="text/javascript" src="syntaxhighlighter/scripts/shBrushPhp.js"></script>
+        <script type="text/javascript">SyntaxHighlighter.all();</script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="container-fluid">
+                <header class="site-header">
+                    <div class="site-title"><a href="/">CKdialog</a></div>
+                    <div class="site-slogan">碎片弹窗 for PHP</div>
+                </header>
+
+<div class="row">
+    <div class="col-md-12">
+        <p class="lead">
+            CKdialog ,可以在大前端实现弹窗程序碎片化，有利于效率，分工;
+        </p>
+        <pre class="brush:javascript">
+$(".buttonclass").click(function(){
+	$.CK({
+		rel:$(this).attr('rel'),
+	});
+});
+</pre>
+    </div>
+</div>
+
+
+
+<div class="row section">
+    <div class="col-md-3">
+        <a class="slim-button" href="http://www.weibo.com/shampeak"><i class="fa fa-bullhorn"></i><span>Blog</span></a>
+    </div>
+
+    <div class="col-md-3">
+        <a class="slim-button" href="https://github.com/shampeak/Sham_CkDialog" target="_blank"><i class="fa fa-book"></i><span>Github</span></a>
+    </div>
+
+    <div class="col-md-3">
+        <a class="slim-button" href="../Sample/" target="_blank"><i class="fa fa-question-circle"></i><span>Sample</span></a>
+    </div>
+
+    <div class="col-md-3">
+        <a class="slim-button" href="/Documents/Documents.html"><i class="fa fa-wrench"></i><span>Documents</span></a>
+    </div>
+</div>
+
+<div class="alert alert-info" style="margin-top: -10px; margin-bottom: 30px">
+    <i class="fa fa-smile-o"></i> 请保留版权信息</div>
+
+
+<div class="row">
+    <div class="col-md-12">
+        <p class="lead">目录文件</p>
+        <pre class="language-php"><code>CKdialog/<br>    ├── css/ <br>    ├── js/ <br>    └── fonts/<br></code></pre>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-12">
+        <p class="lead">环境加载</p>
+        <pre class="language-php"><code>&lt;script src=&quot;/assets/js/jquery-1.11.1.min.js&quot;&gt;&lt;/script&gt;<br>&lt;script src=&quot;/assets/js/artDialog4.1.7/artDialog.js?skin=default&quot;&gt;&lt;/script&gt;<br>&lt;script src=&quot;/assets/js/CK.js&quot;&gt;&lt;/script&gt;&lt;!-- 基于artdialog的组件 --&gt;
+&lt;script src=&quot;/assets/js/CK_bootstrap.js&quot;&gt;&lt;/script&gt;&lt;!-- 基于bootstrap的组件 --&gt;</code></pre>
+    </div>
+</div>
+
+
+<div class="row section">
+    <div class="col-md-12">
+        <h1 class="divider"><span>下载 &amp; 安装</span></h1>
+        <p>
+            下载压缩包,解压文件,把CKdialog放置到任意的目录下,例如跟下;</p>
+        <p>第一步,包含文件</p>
+        <pre><code>&lt;script src=&quot;/assets/js/jquery-1.11.1.min.js&quot;&gt;&lt;/script&gt;<br>&lt;script src=&quot;/assets/js/artDialog4.1.7/artDialog.js?skin=default&quot;&gt;&lt;/script&gt;<br>&lt;script src=&quot;/assets/js/CK.js&quot;&gt;&lt;/script&gt;&lt;!-- 基于artdialog的组件 --&gt;
+&lt;script src=&quot;/assets/js/CK_bootstrap.js&quot;&gt;&lt;/script&gt;&lt;!-- 基于bootstrap的组件 --&gt;</code></pre>
+        <p>
+        下一步:包含CKdialog文件,开始使用. </p>
+        <pre><span class="brush:javascript">$(".buttonclass").click(function(){
+	$.CK({
+		rel:$(this).attr('rel'),
+	});
+});</span></pre>
+        <p class="center">
+            <a class="btn btn-primary btn-lg" href="https://github.com/slimphp/Slim/releases" target="_blank">Download ZIP</a>
+        </p>
+    </div>
+</div>
+
+<div class="row section">
+    <div class="col-md-12">
+        <h1 class="divider"><span>路线图</span></h1>
+        <div class="row"></div>
+
+        <div class="row"></div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h2><i class="fa fa-database"></i> ApcClass模块</h2>
+                <p>
+                    Slim provides helper methods that make client-side
+                    HTTP caching easier. It helps you work with
+                    the <code>Expires</code>, <code>Last-Modified</code>,
+                    and <code>ETag</code> headers.
+                </p>
+            </div>
+
+            <div class="col-md-6">
+                <h2><i class="fa fa-lock"></i> 其他</h2>
+                <p>
+                    Slim has super-secure cryptography
+                    using military-grade encryption. Slim uses
+                    your unique key to encrypt session and cookie
+                    data before persisting data to disk.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="site-footer">
+        <p>
+                    Created by <a href="http://www.weibo.com/shampeak">Shampeak</a></p>
+</footer>
+            </div>
+        </div>
+
+    </body>
+</html>
+
